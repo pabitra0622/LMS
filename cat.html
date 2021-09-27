@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        var subcategory = {
+            Academic: ["BCA", "BBM", "BSW","BBS", "BBA", "MIT"],
+            News: ["Gorkha Patra", "Nagarik Dainik", "Himalayan Times","Annapurna", "Kantipur", "Nepal Patra"],
+            Others: ["Poem", "Novel", "Classic","Artical", "Fiction", "Non-fiction "]
+        }
+        function makeSubmenu(value) {
+            if (value.length == 0) document.getElementById("categorySelect").innerHTML = "<option></option>";
+            else {
+                var citiesOptions = "";
+                for (categoryId in subcategory[value]) {
+                    citiesOptions += "<option>" + subcategory[value][categoryId] + "</option>";
+                }
+                document.getElementById("categorySelect").innerHTML = citiesOptions;
+            }
+        }
+        function AddSelected() {
+            var country = document.getElementById("category").value;
+            var city = document.getElementById("categorySelect").value;
+            alert(country + "\n" + city);
+        }
+        function resetSelection() {
+            document.getElementById("category").selectedIndex = 0;
+            document.getElementById("categorySelect").selectedIndex = 0;
+        }
+    </script>
+</head>
+<body onload="resetSelection()">
+<select id="category" size="1" onchange="makeSubmenu(this.value)">
+<option value="" disabled selected>Choose Category</option>
+<option>Academic</option>
+<option>News</option>
+<option>Others</option>
+</select>
+<select id="categorySelect" size="1"> <br>
+<option value="" disabled selected>Choose Subcategory</option>
+<option></option>
+</select>
+    <button onclick="AddSelected()">Add Selected Category</button>
+</body>
+</html>
