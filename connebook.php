@@ -15,34 +15,24 @@
      if(isset($_POST['save'])) {
           $bookname = $_POST['bookname'];
      	    $bookid=$_POST['bookid'];
+              $catid  = $_POST['category'];
+              $author = $_POST['author'];
           $author=$_POST['author'];
           $Publication=$_POST['Publication'];
      	    $Faculty=$_POST['Faculty'];
-      if(empty($bookname)){
-              array_push($errors, "title is required");
-         }
-     if(empty($bookid)){
-               array_push($errors, "Bookid is required");
-          }
+     
 
-           if(empty($Author)){
-               array_push($errors, "Author is required");
-          }
-           if(empty($Publication)){
-               array_push($errors, "Publication is required");
-          }
-     	if(empty($Faculty)){
-     		array_push($errors, "Faculty is required");
-     	}
-     	if(count($errors)==0){
-
-  $sql = "INSERT INTO  `addbook`(`bookname`, `bookid`, `author`, `Publication`, `Faculty`) VALUES ('$bookname','$bookid','$author','$Publication','$Faculty')";
-                header('location: regbooks.php');
-     		mysqli_query($con,$sql);
+  $sql = "INSERT INTO  `addbook`(`bookname`, `bookid`, `author`, `Publication`, `Faculty`,`author_id`,`cat_id`)
+   VALUES ('$bookname','$s','$author','$Publication','$Faculty','$author','$catid')";
+             
+     	$insert = mysqli_query($con,$sql);
+          if($insert){
                $_SESSION['username'] = $username;
                $_SESSION['success'] = "book add Successfully!!";
                header("location: regbooks.php");
-     	}
+          }
+              
+     	
      }
 
      //login users

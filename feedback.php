@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Feedback</title>
-    <link rel="stylesheet" type="text/css" href="feedback.css">
+    <link rel="stylesheet" type="text/css" href="feedback1.css">
 <body>
         <form><div class="container">
             <h1> Leave your Comment!</h1>
@@ -20,7 +20,7 @@
     </select> <br> <br>
     <label for="subject">Comment</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
-    <br>
+    <br> <br>
     <input type="submit" value="Submit">
   </form>
 </div>

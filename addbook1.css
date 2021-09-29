@@ -4,63 +4,61 @@ body{
     background: url(front.jpg);
     background-size: cover;
     background-position: center;
+    font-family: sans-serif;
 }
-
-.container{
-    width: 320px;
-    height: 420px;
+.AddbookBox{
+    width: 500px;
+    height: 740px;
     background: #000;
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
+		color: #fff;
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%,-50%);
+		box-sizing: border-box;
+		padding: 70px 30px;
 }
-
-
-h1{
+.Addbookbox h1{
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
     font-size: 22px;
 }
-
-.containerp{
+.Addbookbox p{
     margin: 0;
     padding: 0;
     font-weight: bold;
 }
 
-.container input{
+.Addbookbox input{
     width: 100%;
     margin-bottom: 20px;
 }
-.container input[type="submit"]
+.AddbookBox input[type="submit"]
 {
     border: none;
     outline: none;
     height: 40px;
+    width: 100%;
     background: #0000FF;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
 }
-.container input[type="submit"]:hover
+.AddbookBox input[type="submit"]:hover
 {
     cursor: pointer;
     background: #ffc107;
     color: #000;
 }
-.container a{
+.Addbookbox a{
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
     color: darkgrey;
 }
 
-.container a:hover
+.Addbookbox a:hover
 {
     color: #ffc107;
 }

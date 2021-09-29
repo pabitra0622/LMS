@@ -1,4 +1,5 @@
 <?php
+include "Connection.php";
 	require('functions.php');
 	session_start();
 ?>
@@ -7,13 +8,9 @@
 <head>
 	<title>Add Author</title>
 	<link rel="stylesheet" type="text/css" href="add_author.css">
-
-
 </head>
 <body>
 
-	<span><marquee> Library opens at 6:00 AM and close at 5:45 PM</marquee></span><br><br>
-	<body>
 	    <div class="add_author">
 				  <form action="regauth.php" method="post">
 	        <h1> Add Author Here!</h1>

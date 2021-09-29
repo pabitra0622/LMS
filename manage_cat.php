@@ -8,23 +8,18 @@
 	<title>Manage Books</title>
   	<style type="text/css">
 		#side_bar{
-
 font-family: Arial, Helvetica, sans-serif;
 border-collapse: collapse;
 width: 100%;
 }
-
 #side_bar td, #side_bar th {
 border: 1px solid #ddd;
-padding: 8px;
+padding: 0px;
 }
-
 #side_bar tr:nth-child(even){background-color: #f2f2f2;}
-
 #side_bar tr:hover {background-color: #ddd;}
-
 #side_bar th {
-padding-top: 12px;
+padding-top: 5px;
 padding-bottom: 12px;
 text-align: left;
 background-color: #04AA6D;
@@ -35,14 +30,8 @@ color: white;
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.php">Library Management System(LMS)</a>
-			</div>
-			<font style="color: white"><span><strong>Welcome: <?php echo $_SESSION['name'];?></strong></span></font>
-			<font style="color: white"><span><strong>Email: <?php echo $_SESSION['email'];?></strong></span></font>
-			<ul class="nav navbar-nav navbar-right">
-
-	<span><marquee> Library opens at 6:00 AM and close at 5:45 PM</marquee></span><br><br>
+		<font style="color: blue"><span class ="tab"><strong><marquee>	 opens at 6:00 AM and close at 5:45 PM</marquee></strong></span></font>
+	<br> <br>
 	<div class="row">
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
@@ -74,7 +63,8 @@ color: white;
 							<td><?php echo $row['Publication'];?> </td>
 							<td><?php echo $row['Author'];?> </td>
 							<td>
-								<button class="btn" name=""><a href="edit_cat.php?cid=<?php echo $row['cat_id'];?>">Edit</a></button>
+								<button class="btn" name=""><a href="edit_cat.php?cid=<?php echo $row['cat_id'];?>">Edit</a></button><br>
+								
 								<button class="btn" name=""><a href="delete_cat.php?cid=<?php echo $row['cat_id'];?>">Delete</a></button>
 							</td>
 							</tr>

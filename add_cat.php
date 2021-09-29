@@ -22,7 +22,6 @@
 			<form action="regcat.php" method="post">
 				<div class="form-group">
 					<div class="side-nav-categories">
-
 						<div class="addbook_category">
 				        <h1> Add  Category</h1>
 				        <form name = "addbook_category" action="connebook.php" method="post">

@@ -7,9 +7,6 @@
 	$author_id = "";
 	$Type = "";
 	$Publication = "";
-	$Books = "";
-
-
 	$query = "select *  from authors";
 ?>
 <!DOCTYPE html>
@@ -59,7 +56,7 @@
 					<th>Author ID </th>
 					<th>Type</th>
 					<th>Publication</th>
-					<th>Books</th>
+					
 				</tr>
 				<?php
 					$query_run = mysqli_query($connection,$query);

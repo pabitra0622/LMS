@@ -48,11 +48,7 @@ color: white;
 	</style>
 </head>
 <body>
-				<a class="navbar-brand" href="index.php">Library Management System(LMS)</a>
-			</div>
-			<font style="color: white"><span><strong>Welcome: <?php echo $_SESSION['name'];?></strong></span></font>
-			<font style="color: white"><span><strong>Email: <?php echo $_SESSION['email'];?></strong></span></font>
-			<ul class="nav navbar-nav navbar-right">
+			
 
 <span><marquee> Welcome to Online Libarary Management System. This is library Management System. Library opens at 6:00 AM and close at 5:45 PM</marquee></span><br><br>
 <div class="row">

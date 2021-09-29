@@ -19,6 +19,10 @@
   			width: 300px;
   			height: 450px;
   		}
+		  .tab {
+            margin-left: 90px;
+			font:
+        }
   	</style>
 </head>
 <body>
@@ -27,7 +31,7 @@
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.php">Library Management System(LMS)</a>
 			</div>
-			<font style="color: white"><span><strong> <?php echo $_SESSION['username'];?></strong></span></font>
+			<font style="color: Blue"><span><strong> <?php echo $_SESSION['username'];?></strong></span></font>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['username'];?></a>
@@ -74,10 +78,10 @@
 		</ul>
 	</div>
 </nav>
+<font style="color: Blue"><span><strong><marquee>WEL-COME TO ONLINE LIBRARY MANAGEMENT SYSTEM </marquee></strong></span></font>
+<font style="color: BLACK"><span class ="tab"><strong><marquee>	 opens at 6:00 AM and close at 5:45 PM</marquee></strong></span></font>
 
-	<span><marquee>Welcome to Online Library Management System. <br>
-		 Library opens at 6:00 AM and close at 5:45 PM</marquee></span><br><br>
-	<div class="row">
+<div class="row">
 		<div class="col-md-3">
 			<div class="card bg-light" style="width: 320px">
 				<div class="card-header">Registered Users:</div>
@@ -114,7 +118,6 @@
 				</div>
 			</div>
 		</div> 
-		
 		<div class="col-md-3">
 			<div class="card bg-light" style="width: 320px">
 				<div class="card-header"> Books By Authors</div>
@@ -129,7 +132,7 @@
 				<div class="card-header">Books By Category:</div>
 				<div class="card-body">
 					<p class="card-text">No of Book's category: </p>
-					<a href="regcat.php" class="btn btn-info" target="_blank"> View Books By Category</a>
+					<a href="search.php" class="btn btn-info" target="_blank"> View Books By Category</a>
 				</div>
 			</div>
 		</div>
